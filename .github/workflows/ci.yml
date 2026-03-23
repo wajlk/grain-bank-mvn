@@ -9,7 +9,9 @@ jobs:
  uses: actions/setup-java@v4
  with:
  java-version: '21'
- distribution: 'adopt'
+ distribution: 'temurin'
  cache: maven
  - name: Validate, build and run tests
  run: mvn --batch-mode --update-snapshots verify
+
+ 
